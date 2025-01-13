@@ -20,7 +20,7 @@ PRESERVE_CONTAINER=n
 #
 # [DESKTOP ENVIRONMENT]
 # Contains XFCE4 desktop environment and X11VNC server.
-CONFIG_DESKTOP=n
+CONFIG_DESKTOP=y
 #
 #
 #
@@ -177,9 +177,9 @@ USE_ADI_REPO_RPI_BOOT=y
 #
 # [INTEL AND XILINX BOOT FILES]
 # Contains boot files for Intel and Xilinx.
-CONFIG_XILINX_INTEL_BOOT_FILES=y
+CONFIG_XILINX_INTEL_BOOT_FILES=n
 RELEASE_XILINX_INTEL_BOOT_FILES=2022_r2
-USE_ADI_REPO_CARRIERS_BOOT=y
+USE_ADI_REPO_CARRIERS_BOOT=n
 #
 #
 #
@@ -204,7 +204,7 @@ INSTALL_RPI_PACKAGES=n
 # After cloning the repository, the script should be added inside 'adi-kuiper-gen' folder.
 # The path should be relative to 'adi-kuiper-gen' folder.
 # Example: EXTRA_SCRIPT=stages/07.extra-tweaks/01.extra-scripts/examples/extra-script-example.sh
-EXTRA_SCRIPT=
+EXTRA_SCRIPT=stages/07.extra-tweaks/01.extra-scripts/network-tools/extra-script-network-tools.sh
 #
 #
 #
